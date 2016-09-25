@@ -1,17 +1,20 @@
 ---
 layout: default
-title: Your New Jekyll Site
+title: ATOM Traders - Ganhe dinheiro no mercado
 ---
 
-{% include teste.html %}
+<div class="home-conteudo">
 
-<div id="home">
-  <h1>Blog Posts</h1>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
+	{% include header.html %}
+
+	<div class="home-secoes">
+		
+		<!-- Todas as seções aqui -->
+		{% include secao-comece.html %}
+		
+		{% include colunas.html %}
+
+	</div>
+
 </div>
 
-{% include about.html %}

@@ -1,0 +1,53 @@
+.home-conteudo
+	display: flex
+	flex-direction: column
+
+	.home-secoes
+
+		section
+			padding: 50px 0
+
+
+// Classes Flex
+.flex
+	display: flex
+
+.flex--space	
+	justify-content: space-around
+	margin: 0 10px
+
+.flex--center
+	justify-content: center
+
+// Colunas
+
+.col-1
+	margin: 0 10px
+	width: 330px
+
+.col-2
+	margin: 0 20px
+	width: 480px
+
+.col-3
+	margin: 0 20px
+
+.col-50
+	width: 50%
+
+
+@media (max-width: 768px)
+	section .flex
+		display: block
+
+	.flex,
+	.flex--space,
+	.flex--center
+		margin: 0 20px
+
+	.col-1,
+	.col-2,
+	.col-3,
+	.col-50
+		margin: 0
+		width: 100%
